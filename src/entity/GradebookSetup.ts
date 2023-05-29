@@ -5,3 +5,4 @@ export interface GradebookSetup {
     activity: string,
     maximun_grade: number
 }
+//darlin allauca//

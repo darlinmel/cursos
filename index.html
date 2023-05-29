@@ -1,104 +1,185 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="cmyk">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.5/dist/full.css" rel="stylesheet" type="text/css" />
+
+  <title>Cursos_Darlin Allauca</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.5/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://bootswatch.com/5/slate/bootstrap.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <h1>Darlin allauca</h1>
 </head>
-
 <body>
-
-    <div class="max-w-2xl mx-auto rounded-lg shadow-2xl border-4">
-        <p class="text-center uppercase font-bold my-4">Registro del <span class="text-primary">Estudiante</span></p>
-        <div class="rounded-lg shadow-2xl border-4 grid grid-cols m-4 p-4 gap-4">
-            <p>DNI:</p>
-            <input class="input input-primary" type="text" id="student_dni">
-            <p>Nombre Completo:</p>
-            <input class="input input-primary" type="text" id="student_fullname">
-            <p>Nivel:</p>
-            <input class="input input-primary" type="text" id="student_level">
-            <button class="btn btn-primary" onclick="addStudent()">Guardar</button>
+  <header>
+  </header>
+  <main>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+              <h3>ESTUDIANTE</h3> 
+            </div>
+            <hr>
+            <div class="card-body">
+               <div class="mb-3">
+                 <label for="nameStudent" class="form-label">Nombre</label>
+                 <input type="text" name="name" id="nameStudent" class="form-control" placeholder="nombre del estudiante" aria-describedby="helpId">
+                 <label for="idStudent" class="form-label">Cédula</label>
+                 <input type="text" name="id" id="idStudent" class="form-control" placeholder="numero de cedula" aria-describedby="helpId">
+                 <label for="addressStudent" class="form-label">Dirección</label>
+                 <input type="text" name="address" id="addressStudent" class="form-control" placeholder="direccion de domicillio" aria-describedby="helpId">
+                 <label for="registrationCodeStudent" class="form-label">Numero de Matricula</label>
+                 <input type="text" name="registration" id="registrationCodeStudent" class="form-control" placeholder="numero de matricula" aria-describedby="helpId">
+                 <label for="levelStudent" class="form-label">Nivel</label>
+                 <input type="text" name="level" id="levelStudent" class="form-control" placeholder="nivel en el que esta" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                <button class="btn btn-primary" onclick="addStudent()">Agregar</button>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+              <h3>Profesor</h3> 
+            </div>
+            <hr>
+            <div class="card-body">
+               <div class="mb-3">
+                 <label for="nameTeacher" class="form-label">Nombre</label>
+                 <input type="text" name="name" id="nameTeacher" class="form-control" placeholder="nombre del profesor" aria-describedby="helpId">
+                 <label for="idTeacher" class="form-label">Cédula</label>   
+                 <input type="text" name="id" id="idTeacher" class="form-control" placeholder="numero de cedula" aria-describedby="helpId">
+                 <div class="mb-3">
+                  <label for="carrerTeacher" class="form-label">Carrera</label>
+                  <br>
+                  <select class="form-select form-select-sm" name="carrerTeacher" id="carrerTeacher">
+                    <option value="turismo">Turismo</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="software">sowtware</option>   
+                   </select>
+                 </div>
+                 </div>
+                </div>
+                <div class="card-footer text-muted">
+                  <button class="btn btn-primary"onclick="addTeacher()">Agregar</button>
+              </div>
+            </div>
+            <hr>
+            <div class="card">
+              <div class="card-header">
+                 <h3>CURSOS</h3> 
+              </div>
+              <hr>
+              <div class="card-body">
+                 <div class="mb-3">
+                  <label for="asignatureTeacher" class="form-label">Asignatura</label>
+                  <br>
+                   <select class="form-select form-select-sm" name="asignatureTeacher" id="asignatureTeacher">
+                     <option value="interfaces">Interfaces</option>
+                     <option value="programacion">Programacion</option>
+                     <option value="metodologias">Metodologias</option>   
+                    </select>
+                  </div>
+              </div>
+              <div class="card-footer text-muted">
+                  <button class="btn btn-primary"onclick="addCourse()">Agregar</button>
+              </div>
+          </div>
+          <hr>
+      <div class="card">
+        <div class="card-header">
+          <h3>ACTIVIDAD</h3>
+        </div>
+        <hr>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="activity" class="form-label">Actividad</label>
+            <input type="text" name="activity" id="activity" class="form-control" placeholder="Escriba la actividad"
+              aria-describedby="helpId">
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <button class="btn btn-primary" onclick="addActivity()">Agregar</button>
+        </div>
+      </div>
+      <hr>
+      <div class="card">
+        <div class="card-header">
+          <h3>LIBRO DE CALIFICACIONES</h3>
+        </div>
+        <hr>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="courseGrade" class="form-label">CURSO</label>
+            <select class="form-select form-select-sm" name="courseGrade" id="courseGrade">
+          </div>
+          <div class="mb-3">
+            <label for="activityGrade" class="form-label">ACTIVIDAD</label>
+            <select class="form-select form-select-sm" name="activityGrade" id="activityGrade">
+               
+             </select>
+          </div>
+          <div class="mb-3">
+            <label for="activityGrade" class="form-label">ACTIVIDAD</label>
+            <select class="form-select form-select-sm" name="activityGrade" id="activityGrade">
+               
+             </select>
+          </div>
+          <div class="mb-3">
+            <label for="weigthgrd" class="form-label">PESO</label>
+            <input type="number" name="weigthgrd" id="weigthgrd" class="form-control" placeholder="0-100"
+              aria-describedby="helpId">
+          </div>
+          <div class="mb-3">
+            <label for="maxnotagrd" class="form-label">NOTA MÁXIMA</label>
+            <input type="number" name="maxnotagrd" id="maxnotagrd" class="form-control" placeholder="0-100"
+              aria-describedby="helpId">
+          </div>
+          <div class="card-footer text-muted">
+            <button class="btn btn-primary" onclick="addgradeBook()">Agregar</button>
+          </div>
         </div>
     </div>
-
-    <div class="divider"></div>
-
-    <div class="max-w-2xl mx-auto rounded-lg shadow-2xl border-4">
-        <p class="text-center uppercase font-bold my-4">Registro del <span class="text-primary">Docente</span></p>
-        <div class="rounded-lg shadow-2xl border-4 grid grid-cols m-4 p-4 gap-4">
-            <p>DNI:</p>
-            <input class="input input-primary" type="text" id="teacher_dni">
-            <p>Nombre Completo:</p>
-            <input class="input input-primary" type="text" id="teacher_fullname">
-            <p>Área:</p>
-            <select id="teacher_area" class="input input-primary">
-                <option value="Art">Arte Culinario</option>
-                <option value="Marketing">Marketing</option>
-                <option value="Software">Software</option>
-            </select>
-            <button class="btn btn-primary" onclick="addTeacher()">Guardar</button>
+    <hr>
+    <div class="card">
+      <div class="card-header">
+        <h3>ASIGNACION</h3>
+      </div>
+      <hr>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="assignmentStudent" class="form-label">Estudiantes</label>
+          <select class="form-select form-select-sm" name="assignmentStudent" id="assignmentStudent">
         </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="max-w-2xl mx-auto rounded-lg shadow-2xl border-4">
-        <p class="text-center uppercase font-bold my-4">Registro de la <span class="text-primary">Actividad</span></p>
-        <div class="rounded-lg shadow-2xl border-4 grid grid-cols m-4 p-4 gap-4">
-            <p>Nombe:</p>
-            <input class="input input-primary" type="text" id="activity_name">
-            <button class="btn btn-primary" onclick="addActivity()">Guardar</button>
+        <div class="mb-3">
+          <label for="" class="form-label">Libro de Configuración:</label>
+          <select class="form-select form-select-sm" name="" id=""></select>
         </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="max-w-2xl mx-auto rounded-lg shadow-2xl border-4">
-        <p class="text-center uppercase font-bold my-4">Configuración del <span class="text-primary">Libro de
-                calificaciones </span></p>
-        <div class="rounded-lg shadow-2xl border-4 grid grid-cols m-4 p-4 gap-4">
-            <p>Valor:</p>
-            <input class="input input-primary" type="text" id="gradebook_value">
-            <p>Curso:</p>
-            <select id="gradebook_course" class="input input-primary">
-            </select>
-            <p>Actividad:</p>
-            <select id="gradebook_activity" class="input input-primary">
-            </select>
-            <p>Nota Máxima:</p>
-            <input type="number" id="gradebook_maximun_grade" class="input input-primary">
-            <button class="btn btn-primary" onclick="addGradebookSetup()">Guardar</button>
+        <div class="mb-3">
+          <label for="asignmentGradebooksetup" class="form-label">Libro de Configuración:</label>
+          <select class="form-select form-select-sm" name="asignmentGradebooksetup" id="asignmentGradebooksetup"></select>
         </div>
-    </div>
-
-    <div class="max-w-2xl mx-auto rounded-lg shadow-2xl border-4">
-        <p class="text-center uppercase font-bold my-4">Asigancion <span class="text-primary"> </span></p>
-        <div class="rounded-lg shadow-2xl border-4 grid grid-cols m-4 p-4 gap-4">
-            <p>Estudiante :</p>
-            <select id="assignmentStudent" class="input input-primary">
-            </select>
-            <p>Libro de Configuración:</p>
-            <select id="asignmentGradebooksetup" class="input input-primary">
-            </select>
-            <p>calificacion:</p>
-            <input type="number" id="asignmentGrade" class="input input-primary">
-
-            <button class="btn btn-primary" onclick="addAssigment()">Guardar</button>
+        <div class="mb-3">
+          <label for="asignmentGrade" class="form-label">calificacion</label>
+          <input type="number" name="asignmentGrade" id="asignmentGrade" class="form-control" placeholder="0-100"
+            aria-describedby="helpId">
         </div>
-    </div>
-    <div class="divider"></div>
+        </div>
+        <div class="card-footer text-muted">
+          <button class="btn btn-primary" onclick="addAssigment()">Agregar</button>
+        </div>
+      </div>     
+  </div>   
+    <br>
+    <div class="container">
     <hr>
     <h2>Reporte</h2>
     <br>
     <div>
-        <button class="btn btn-priamry" onclick="generaterReport">Generar reporte</button>
+        <button class="btn btn-primary" onclick="generateReport()">Generar reporte</button>  
     </div>
+    <br>
     <table id="report" class="table table-striped" style="border-radius: 2px solid rgb(107, 107, 107)">
         <thead >
             <tr>
@@ -114,11 +195,20 @@
             <td></td>
         </tbody>
     </table>
+    </div>
+    <br>
+  </main>
+  <footer>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
 
-
-
-    <script>let exports = {};</script>
-    <script src="built/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script>let exports = {};</script>
+  <script src="dist/main.js"></script>
 </body>
 
 </html>

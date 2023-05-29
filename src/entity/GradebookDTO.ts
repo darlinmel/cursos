@@ -8,3 +8,4 @@ export interface GradebookDTO extends Student, GradebookSetup, Activity, Assignm
     studentName: string,
     lastName: string
 }
+//darlin allauca//
