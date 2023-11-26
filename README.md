@@ -2,7 +2,4 @@
 Darlin Melany
 lorena 
 # Nombre del Proyecto
-
-Breve descripción o introducción del proyecto.
-
-![Minion]()
+![Minion](https://interactivadigital.com/uploads/2015/06/minion-021313.jpg)https://interactivadigital.com/uploads/2015/06/minion-021313.jpg)
