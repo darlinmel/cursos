@@ -1,4 +1,4 @@
-<h1 align="center">Nombre del Proyecto</h1>
+<h1 align="center">Minion</h1>
 
 <p align="center">
  Los minions, ingenuos y torpes, buscan un verdadero villano al que servir. A lo largo de una evolución de millones de años, los minions se han puesto al servicio de los amos más despreciables. Kevin, acompañado por el rebelde Stuart y el adorable Bob, emprende un emocionante viaje para conseguir una jefa a quien servir, la terrible Scarlet
@@ -11,6 +11,6 @@
 <h2 align="center">Descripción</h2>
 
 <p align="center">
-  Aquí puedes proporcionar una descripción más detallada de tu proyecto.
+  criaturas pequeñas y amarillas, con uno o dos ojos en su cara y manos con solo tres dedos y con forma aproximada de patata
 </p>
 
