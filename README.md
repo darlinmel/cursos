@@ -1,28 +1,16 @@
+<h1 align="center">Nombre del Proyecto</h1>
+
 <p align="center">
-  <a href="https://eva.yavirac.edu.ec/" target="blank"><img src="[https://yavirac.edu.ec/img/Logo%20Yavirac.png](https://interactivadigital.com/uploads/2015/06/minion-021313.jpg)" width="200" alt="tarea" /></a>
+ Los minions, ingenuos y torpes, buscan un verdadero villano al que servir. A lo largo de una evolución de millones de años, los minions se han puesto al servicio de los amos más despreciables. Kevin, acompañado por el rebelde Stuart y el adorable Bob, emprende un emocionante viaje para conseguir una jefa a quien servir, la terrible Scarlet
 </p>
 
-
-[circleci-image]: https://th.bing.com/th/id/OIP.2l8m65UEPCUNqZNd-Vqn_QHaHa?pid=ImgDet&rs=1
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">Minion"</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-
-## S2-P1: Conección a la base de datos Psql
-
-Lugar de los archivos del deber
-```bash
-cd connection/src/petshop/  
-```
-
-# Veterinaria
 <p align="center">
-  <a href="" target="blank"><img src="https://github.com/darlinmel/AplicacionesWeb/blob/main/connection/taller2.png" width="800" alt="tarea" /></a>
+  <img src="https://interactivadigital.com/uploads/2015/06/minion-021313.jpg" alt="Minion">
 </p>
 
+<h2 align="center">Descripción</h2>
 
-## Integrantes
+<p align="center">
+  Aquí puedes proporcionar una descripción más detallada de tu proyecto.
+</p>
 
