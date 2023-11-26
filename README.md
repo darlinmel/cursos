@@ -14,3 +14,9 @@
   criaturas pequeñas y amarillas, con uno o dos ojos en su cara y manos con solo tres dedos y con forma aproximada de patata
 </p>
 
+<h2 Stay in touch="center">Descripción</h2>
+
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
